@@ -1,6 +1,6 @@
 [package]
 name = "MOSAIC-UMD"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 authors = ["Harry Woodhouse <jgf526@york.ac.uk>"]
 description = "The Universal Measurement Data (UMD) Structure for the Motor Oral Speech Analysis and Integrated Computation (MOSAIC) software. This library converts the most common articulatory/kinematic phonetics data into a standardised file structure referred to as teh 'UMD' or 'Universal Measurement Data Structure'. This is to ensure that data is both reproducible and comparable across methods of analysis and capture."
