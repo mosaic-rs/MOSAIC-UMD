@@ -1,0 +1,46 @@
+# MOSAIC DRIVER
+# For: OpenFace v2.2.0
+# Extracts lips only (points 48 - 67)
+# 2d points only
+
+# Created: July 7th, 2016
+# Last Updated: --
+# Author: Harry Woodhouse
+# Email: jgf526@york.ac.uk OR harry@harrywstephen.com
+
+driver_name: "openface_v2.2.0_48-67"
+driver_description: "Driver for OpenFace v2.2.0 for lip values only"
+layout_type: "wide" 
+
+header_mapping:
+  frame: "frame"
+  timestamp: "timestamp"
+  confidence: "confidence"
+  2d_coordinate_style:
+    x_raw: "x_{index}"
+    y_raw: "y_{index}"
+
+landmarks:
+  index_range: { start: 48, end: 67 }
+
+landmark_labels:
+  48: "OuterRightCommissure"
+  49: "OuterRightUpperLip_com"
+  50: "OuterRightUpperLip_phil"
+  51: "OuterPhiltrum"
+  52: "OuterLeftUpperLip_phil"
+  53: "OuterLeftUpperLip_com"
+  54: "OuterLeftCommissure"
+  55: "OuterLeftLowerLip_com"
+  56: "OuterLeftLowerLip_phil"
+  57: "OuterLowerVermillionBorder"
+  58: "OuterRightLowerLip_phil"
+  59: "OuterRightLowerLip_com"
+  60: "InnerRightCommissure"
+  61: "InnerRightUpperLip"
+  62: "InnerPhiltrum"
+  63: "InnerLeftUpperLip"
+  64: "InnerLeftCommissure"
+  65: "InnerLeftLowerLip"
+  66: "InnerLowerVermillionBorder"
+  67: "InnerRightLowerLip"
