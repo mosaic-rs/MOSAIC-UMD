@@ -1,0 +1,13 @@
+[package]
+name = "UMD-PY"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[lib]
+name = "UMD_PY" # Python modules must use underscores, not dashes
+crate-type = ["cdylib"]
+
+[dependencies]
+UMD-CORE = { path = "../UMD-CORE", package = "MOSAIC-UMD" }
+pyo3 = { version = "0.22", features = ["extension-module", "macros"] }
