@@ -1,0 +1,13 @@
+[package]
+name = "UMD-R"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[lib]
+name = "UMDR"
+crate-type = ["rlib", "staticlib"]
+
+[dependencies]
+UMD-CORE = { path = "../UMD-CORE", package = "MOSAIC-UMD" }
+extendr-api = "0.7"
