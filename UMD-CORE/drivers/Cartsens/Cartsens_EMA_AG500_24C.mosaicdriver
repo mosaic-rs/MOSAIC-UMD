@@ -1,0 +1,58 @@
+# MOSAIC DRIVER
+# For: Cartsens AG500/501 EMA
+# 24 Channels MAX
+# 3d points only
+
+# Created: July 8th, 2026
+# Last Updated: --
+# Author: Harry Woodhouse
+# Email: jgf526@york.ac.uk OR harry@harrywstephen.com
+
+driver_name: "Cartsens_EMA_AG501_24C"
+driver_description: "Driver for Cartsens AG501/500 EMA"
+data_type: binary
+layout_type: "wide" 
+
+binary_structure:
+  magic_header_bytes: 12 # ("AG50xDATA$_V002")
+  total_channels_per_frame: 24 # channel count - user defined
+  bytes_per_float: 4
+
+# .pos files are binary without headers but they are predicitabel in their block structure
+
+blocks:
+  x: 0      
+  y: 1        
+  z: 2        
+  phi: 3    
+  theta: 4
+  confidence: 5
+  padding: 6
+  total_columns_per_channel: 7 # (so we iterate it where x:0 fir channel 1, x: 0+7 for channel 2)
+  total_columns_per_block: 168 # (Channel count * columns per channel)
+
+landmark_labels:
+  1: "N/A"
+  2: "N/A"
+  3: "N/A"
+  4: "N/A"
+  5: "N/A"
+  6: "N/A"
+  7: "N/A"
+  8: "N/A"
+  9: "N/A"
+  10: "N/A"
+  11: "N/A"
+  12: "N/A"
+  13: "N/A"
+  14: "N/A"
+  15: "N/A"
+  16: "N/A"
+  17: "N/A"
+  18: "N/A"
+  19: "N/A"
+  20: "N/A"
+  21: "N/A"
+  22: "N/A"
+  23: "N/A"
+  24: "N/A"
